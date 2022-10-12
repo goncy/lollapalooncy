@@ -55,9 +55,9 @@ h1 {
 }
 
 .correct {
-  color: 'green';
+  color: green;
 }
 
 .incorrect {
-  color: 'red';
+  color: red;
 }
