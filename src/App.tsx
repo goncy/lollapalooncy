@@ -39,24 +39,11 @@ function App() {
     <main>
       <h1>Lollapalooncy</h1>
       <ul>
-        {Array.from(bands.values()).map((band: Band) => {
-          return (
-            <li
-              key={band.name}
-              style={{
-                color:
-                  band.status === "correct"
-                    ? "green"
-                    : band.status === "incorrect"
-                    ? "red"
-                    : "inherit",
-              }}
-              onClick={() => handleClick(band.name)}
-            >
-              {band.name}
-            </li>
-          );
-        })}
+        {Array.from(bands.values()).map((band: Band) => (
+          <li key={band.name} className={band.status} onClick={() => handleClick(band.name)}>
+            {band.name}
+          </li>
+        ))}
       </ul>
     </main>
   );
