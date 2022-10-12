@@ -10,6 +10,8 @@ function App() {
     const draft: Map<Band["name"], Band> = structuredClone(bands);
     const band = draft.get(name)!;
 
+    if (band.status !== "pristine") return;
+
     if (band.valid) {
       band.status = "correct";
 
