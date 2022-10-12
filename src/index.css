@@ -1,11 +1,5 @@
-@font-face {
-  font-family: "Bebas Neue-fallback";
-  size-adjust: 76.27%;
-  src: local("Arial");
-}
-
 :root {
-  font-family: sans-serif, 'Bebas Neue', "Bebas Neue-fallback", Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-size: 24px;
   font-weight: 400;
   font-display: swap;
